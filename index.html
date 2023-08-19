@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect Healthcare</title>
+  <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Linking Bulma Version -->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://bulmatemplates.github.io/bulma-templates/css/landing.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <section class="hero is-info is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="../">
+              <h2 class="is-size-4 is-family-monospace">Connect<br>
+                Healthcare</h2>
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-white is-outlined"
+                  href="https://connect-healthcare-main.nandininema.repl.co/about.html">
+                  <span class="icon">
+                    <i class="fa fa-superpowers"></i>
+                  </span>
+                  <span>About Us</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined"
+                  href="https://connect-healthcare-main.nandininema.repl.co/resources.html">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  <span>Additional Resources</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div id="welcome" class="column is-6 is-offset-3">
+          <h1 class="title">
+            Welcome to our service!
+          </h1>
+          <h2 class="is-size-4">
+            Search a medical concern!</h2>
+          <h2 class="is-italic subtitle">"Asking and searching for help is a courageous step. We are glad you are
+            here!"
+            <br>
+          </h2>
+        </div>
+        <div id="startButton" class="button">
+          Press to Start!
+        </div>
+        <div id="input" class="box is-hidden">
+          <div class="field is-grouped columns">
+            <!--             <p class="control is-expanded">
+              <input id="concernInput" class="input" type="text" placeholder="Enter your concern">
+             
+            </p> -->
+            <div class="column is-two-thirds">
+              <div class="dropdown">
+                <!--               <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <div id="dropdownItems"></div>
+
+                  <!--                 <a href="#about">About</a>
+                <a href="#base">Base</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="#custom">Custom</a>
+                <a href="#support">Support</a>
+                <a href="#tools">Tools</a> -->
+                </div>
+              </div>
+            </div>
+            <p class="control">
+            <div class="column">
+              <a id="searchButton" class="button is-info is-right">
+                Search
+              </a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   Output divs -->
+    <div id="output" class="is-hidden has-text-centered">
+      <!--heading -->
+      <h1 class="title">
+        Welcome to our service!
+      </h1>
+      <h2 class="is-size-4 subtitle">
+        Here are some tips and resources for your concern</h2>
+
+      <!-- name output -->
+      <div id="nameOutput" class="box">
+        <h1 class="is-size-5 has-text-weight-bold has-text-left">Name</h1>
+      </div>
+
+      <!-- description output -->
+      <div id="descriptionOutput" class="box">
+        <h1 class="is-size-5 has-text-weight-bold has-text-left">Description</h1>
+      </div>
+
+      <!--Medical condition output -->
+      <div id="medicalConditionOutput" class="box">
+        <h1 class="is-size-5 has-text-weight-bold has-text-left">Medical Condition</h1>
+      </div>
+
+      <!--Symptoms output -->
+      <div id="symptomsOutput" class="box">
+        <h1 class="is-size-5 has-text-weight-bold has-text-left">Possible Symptoms</h1>
+      </div>
+
+      <!--  Treatment output -->
+      <div id="treatmentOutput" class="box">
+        <h1 class="is-size-5 has-text-weight-bold has-text-left">Treatment</h1>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <script async type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
