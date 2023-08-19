@@ -1,4 +1,4 @@
-# google-computer-science-institute-final-project
+# Google Computer Science Institute Final Project 
 Connect Healthcare was a collaborative final project at the Google Computer Science Institute. By Nandini Nema, Serena Yin, and David Harrison.
 
 ## Explanation of project
